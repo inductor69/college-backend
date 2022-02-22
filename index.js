@@ -18,7 +18,7 @@ app.use(
 
 app.get('/', (req, res) => {
     res.json({
-        description: 'Welcome to the API! Below you can find all the routes for this API along with descriptions.',
+        description: 'Welcome to the API! Below you can find all the routes for this API along with descriptions :)',
         routes: {
             description: 'There are two primary routes => /colleges and /students',
             colleges: {
