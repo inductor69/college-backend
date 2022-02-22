@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "college-metrics-backend",
+    "name": "college-backend",
     "builds": [
         { "src": "index.js", "use": "@vercel/node" }
     ],

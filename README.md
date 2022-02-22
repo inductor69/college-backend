@@ -2,7 +2,7 @@
 
 Welcome to the API! This application is for college metrics dashboard frontend. It is built using Express.js and MongoDB with Mongoose. Below you can find all the routes for this API along with descriptions.
 
-Checkout the API here: <https://college-metrics-backend.vercel.app/>
+Checkout the API here: <https://college-backend.vercel.app/>
 
 ## Routes
 
@@ -12,7 +12,7 @@ There are two primary routes => `/colleges` and `/students`.
 
 * `/colleges/:id` - Returns a single college based on the id provided.
 
-  Example: `https://college-metrics-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56`
+  Example: `https://college-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56`
 
   Sample response
 
@@ -36,7 +36,7 @@ There are two primary routes => `/colleges` and `/students`.
 
 * `/colleges/stats` - Returns the stats for all the colleges i.e., no. of colleges grouped by countries and courses they offer
 
-  Example: `https://college-metrics-backend.vercel.app/colleges/stats`
+  Example: `https://college-backend.vercel.app/colleges/stats`
 
   Sample response
 
@@ -73,7 +73,7 @@ There are two primary routes => `/colleges` and `/students`.
 
 * `/colleges/:id/similar` - Returns the similar colleges based on the id provided. Similar in courses offered and location.
 
-  Example: `https://college-metrics-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56/similar`
+  Example: `https://college-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56/similar`
 
   Sample response
 
@@ -99,7 +99,7 @@ There are two primary routes => `/colleges` and `/students`.
 
 * `/colleges/:id/students` - Returns the students for a college based on the id provided.
 
-  Example: `https://college-metrics-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56/students`
+  Example: `https://college-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56/students`
 
   Sample response
 
@@ -132,7 +132,7 @@ There are two primary routes => `/colleges` and `/students`.
 
   #### NO QUERY PARAMS - Returns all the colleges
 
-  Example: `https://college-metrics-backend.vercel.app/colleges/list`
+  Example: `https://college-backend.vercel.app/colleges/list`
 
   Sample response
 
@@ -159,14 +159,14 @@ There are two primary routes => `/colleges` and `/students`.
   ```
 
   #### 'type' AND 'value' QUERY PARAMS PRESENT - Returns the colleges corresponding to the type and value provided
-  
+
   Both 'type' and 'value' query params MUST be provided, otherwise a 400 status code is returned. 'type' query param MUST have one of these two values => 'country' OR 'course'. The value must be in accordance with the type.
 
   Examples:
 
   * When 'type' is 'country' and 'value' is 'Philippines', then only the colleges in the Philippines will be returned.
 
-    Example: `https://college-metrics-backend.vercel.app/colleges/list?type=country&value=Philippines`
+    Example: `https://college-backend.vercel.app/colleges/list?type=country&value=Philippines`
 
     Sample response
 
@@ -194,7 +194,7 @@ There are two primary routes => `/colleges` and `/students`.
 
   * When 'type' is 'course' and 'value' is 'Music', then only the colleges offering Music will be returned.
 
-    Example: `https://college-metrics-backend.vercel.app/colleges/list?type=course&value=Music`
+    Example: `https://college-backend.vercel.app/colleges/list?type=course&value=Music`
 
     Sample response
 
@@ -221,7 +221,7 @@ There are two primary routes => `/colleges` and `/students`.
 
 * `/students/:id` - Returns the student based on the id provided.
 
-  Example: `https://college-metrics-backend.vercel.app/students/618b9fd92aa253a25e0ef547`
+  Example: `https://college-backend.vercel.app/students/618b9fd92aa253a25e0ef547`
 
   Sample response
 

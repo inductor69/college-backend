@@ -24,26 +24,26 @@ app.get('/', (req, res) => {
             colleges: {
                 '/colleges/:id': {
                     description: 'Returns a single college based on the id provided.',
-                    example: 'https://college-metrics-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56',
+                    example: 'https://college-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56',
                 },
                 '/colleges/stats': {
                     description: 'Returns the stats for all the colleges i.e., no. of colleges grouped by countries and courses they offer',
-                    example: 'https://college-metrics-backend.vercel.app/colleges/stats',
+                    example: 'https://college-backend.vercel.app/colleges/stats',
                 },
                 '/colleges/:id/similar': {
                     description: 'Returns the similar colleges based on the id provided. Similar in courses offered and location',
-                    example: 'https://college-metrics-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56/similar',
+                    example: 'https://college-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56/similar',
                 },
                 '/colleges/:id/students': {
                     description: 'Returns the students of a college based on the id provided.',
-                    example: 'https://college-metrics-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56/students',
+                    example: 'https://college-backend.vercel.app/colleges/618b84b2399bb68fbb64fe56/students',
                 },
                 '/colleges/list': {
                     description: "Returns a list of all the colleges. If the query params 'type' and 'value' are provided, then only those specific colleges (corresponding to type and value) will be returned. In order to get specific colleges, both 'type' and 'value' query params MUST be provided, otherwise a 400 status code is returned. 'type' query param MUST have one of these two values => 'country' OR 'course'. The value must be in accordance with the type.",
                     examples: [
-                        'https://college-metrics-backend.vercel.app/colleges/list?type=country&value=United%20States',
-                        'https://college-metrics-backend.vercel.app/colleges/list?type=course&value=Computer%20Science',
-                        'https://college-metrics-backend.vercel.app/colleges/list',
+                        'https://college-backend.vercel.app/colleges/list?type=country&value=United%20States',
+                        'https://college-backend.vercel.app/colleges/list?type=course&value=Computer%20Science',
+                        'https://college-backend.vercel.app/colleges/list',
                     ],
                     'query-params': {
                         type: "MUST be 'country' OR 'course'. If this is present, then 'value' param MUST be present.",
@@ -54,7 +54,7 @@ app.get('/', (req, res) => {
             students: {
                 '/students/:id': {
                     description: 'Returns a single student based on the id provided.',
-                    example: 'https://college-metrics-backend.vercel.app/students/618b9fd92aa253a25e0ef547',
+                    example: 'https://college-backend.vercel.app/students/618b9fd92aa253a25e0ef547',
                 },
             },
         },
