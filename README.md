@@ -1,8 +1,8 @@
-# College metrics API
+# College API
 
-Welcome to the API! This application is for college metrics dashboard frontend. It is built using Express.js and MongoDB with Mongoose. Below you can find all the routes for this API along with descriptions.
+Assignment API. It is built using Express.js and MongoDB with Mongoose. All the routes for this API along with descriptions.
 
-Checkout the API here: <https://college-backend.vercel.app/>
+API link: <https://college-backend.vercel.app/>
 
 ## Routes
 
